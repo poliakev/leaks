@@ -4,6 +4,7 @@
 TagManager:
   tags:
   - drop
+  - box
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
@@ -41,4 +42,16 @@ TagManager:
   - name: Default
     userID: 0
     uniqueID: 0
+    locked: 0
+  - name: Generators
+    userID: 2
+    uniqueID: 2178797011
+    locked: 0
+  - name: Players
+    userID: 1
+    uniqueID: 299540095
+    locked: 0
+  - name: Drops
+    userID: 3
+    uniqueID: 1201641057
     locked: 0

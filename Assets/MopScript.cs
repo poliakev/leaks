@@ -8,6 +8,7 @@ public class MopScript : MonoBehaviour {
 		if (other.tag == "drop")
 		{
 			Destroy(other.gameObject);
+            KillCount.increment();
 			AudioSource.PlayClipAtPoint(oilDeath,transform.position);
 		}
 	}
