@@ -1,23 +1,19 @@
 fileFormatVersion: 2
-guid: 3f4f07dd8edfd3746a83edd43b9d7dbd
+guid: f24df7d2135516c458d92d27513c2923
 TextureImporter:
   fileIDToRecycleName:
-    21300000: walking_jan_0
-    21300002: walking_jan_1
-    21300004: walking_jan_2
-    21300006: walking_jan_3
-    21300008: walking_jan_4
-    21300010: walking_jan_5
-    21300012: walking_jan_6
-    21300014: walking_jan_7
-    21300016: walking_jan_8
-    21300018: walking_jan_9
-    21300020: walking_jan_10
-    21300022: walking_jan_11
-    21300024: walking_jan_12
-    21300026: walking_jan_13
-    21300028: walking_jan_14
-    21300030: walking_jan_15
+    21300000: cleanpipes_0
+    21300002: cleanpipes_1
+    21300004: cleanpipes_2
+    21300006: cleanpipes_3
+    21300008: cleanpipes_4
+    21300010: cleanpipes_5
+    21300012: cleanpipes_6
+    21300014: cleanpipes_7
+    21300016: cleanpipes_8
+    21300018: cleanpipes_9
+    21300020: cleanpipes_10
+    21300022: cleanpipes_11
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -37,7 +33,7 @@ TextureImporter:
   grayScaleToAlpha: 0
   generateCubemap: 0
   seamlessCubemap: 0
-  textureFormat: -3
+  textureFormat: -1
   maxTextureSize: 1024
   textureSettings:
     filterMode: 0
@@ -53,53 +49,13 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 40
+  spritePixelsToUnits: 32
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: walking_jan_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: walking_jan_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: walking_jan_2
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: walking_jan_3
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: walking_jan_4
+    - name: cleanpipes_0
       rect:
         serializedVersion: 2
         x: 0
@@ -109,7 +65,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: walking_jan_5
+    - name: cleanpipes_1
       rect:
         serializedVersion: 2
         x: 32
@@ -119,7 +75,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: walking_jan_6
+    - name: cleanpipes_2
       rect:
         serializedVersion: 2
         x: 64
@@ -129,7 +85,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: walking_jan_7
+    - name: cleanpipes_3
       rect:
         serializedVersion: 2
         x: 96
@@ -139,7 +95,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: walking_jan_8
+    - name: cleanpipes_4
       rect:
         serializedVersion: 2
         x: 0
@@ -149,7 +105,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: walking_jan_9
+    - name: cleanpipes_5
       rect:
         serializedVersion: 2
         x: 32
@@ -159,7 +115,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: walking_jan_10
+    - name: cleanpipes_6
       rect:
         serializedVersion: 2
         x: 64
@@ -169,7 +125,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: walking_jan_11
+    - name: cleanpipes_7
       rect:
         serializedVersion: 2
         x: 96
@@ -179,7 +135,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: walking_jan_12
+    - name: cleanpipes_8
       rect:
         serializedVersion: 2
         x: 0
@@ -189,7 +145,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: walking_jan_13
+    - name: cleanpipes_9
       rect:
         serializedVersion: 2
         x: 32
@@ -199,7 +155,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: walking_jan_14
+    - name: cleanpipes_10
       rect:
         serializedVersion: 2
         x: 64
@@ -209,7 +165,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: walking_jan_15
+    - name: cleanpipes_11
       rect:
         serializedVersion: 2
         x: 96

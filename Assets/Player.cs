@@ -1,44 +1,70 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Player : MonoBehaviour {
-	public float JetPackForce = 10;
+public class Player : MonoBehaviour
+{
+    public float JetPackForce = 100;
+    public float WalkForce = 10;
+    public float MaxWalkSpeed = 2;
+    private bool isJumping = false;
+    public Transform GroundCheck;
     public GameObject spriteplayer;
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-    
-        void Update () {
+    // Use this for initialization
+    void Start()
+    {
 
-		Vector2 mouse = Input.mousePosition;
-		Vector3 mouseWorldPosition = Camera.main.ScreenToWorldPoint(mouse);
 
-		Vector2 armToMouse = mouseWorldPosition - transform.position;
-        if (armToMouse.x < 0) {
-            spriteplayer.transform.localScale = new Vector3 (-1,1,1);
-  
+    }
+    bool GetGrounded()
+    {
+        return Physics2D.Linecast(transform.position, GroundCheck.position, LayerMask.GetMask("walls"));
+    }
+
+    // Update is called once per frame
+
+    void Update()
+    {
+
+        Vector2 mouse = Input.mousePosition;
+        Vector3 mouseWorldPosition = Camera.main.ScreenToWorldPoint(mouse);
+
+        Vector2 armToMouse = mouseWorldPosition - transform.position;
+        if (armToMouse.x < 0)
+        {
+            spriteplayer.transform.localScale = new Vector3(-1, 1, 1);
+
         }
         else
         {
             spriteplayer.transform.localScale = new Vector3(1, 1, 1);
         }
     }
-	void FixedUpdate () {
-		if (Input.GetKey (KeyCode.UpArrow)) {
-			rigidbody2D.AddForce (Vector2.up * JetPackForce);
-			
-		}
-		if (Input.GetKey (KeyCode.LeftArrow)) {
-			rigidbody2D.AddForce (-Vector2.right * JetPackForce);
-		}
-		if (Input.GetKey (KeyCode.RightArrow)) {
-			rigidbody2D.AddForce (Vector2.right * JetPackForce);
-		}
-		if (Input.GetKey (KeyCode.DownArrow)) {
-			rigidbody2D.AddForce (-Vector2.up * JetPackForce);
-		}
-	}
+    void FixedUpdate()
+    {
+        Animator a = spriteplayer.GetComponent<Animator>();
+        a.SetFloat("walk_Speed", rigidbody2D.velocity.magnitude);
+
+        if (isJumping && GetGrounded())
+        {
+            isJumping = false;
+            a.SetBool("isJumping", false);
+        }
+
+        if (Input.GetKeyDown(KeyCode.UpArrow) && GetGrounded() && !isJumping)
+        {
+            rigidbody2D.AddForce(Vector2.up * JetPackForce);
+            isJumping = true;
+            a.SetBool("isJumping", true);
+        }        
+
+        if (Input.GetKey(KeyCode.LeftArrow) && (rigidbody2D.velocity.magnitude < MaxWalkSpeed))
+        {
+            rigidbody2D.AddForce(-Vector2.right * WalkForce);
+        }
+        if (Input.GetKey(KeyCode.RightArrow) && (rigidbody2D.velocity.magnitude < MaxWalkSpeed))
+        {
+            rigidbody2D.AddForce(Vector2.right * WalkForce);
+
+        }
+    }
 }
